@@ -1,3 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
 .appBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.appBar .logo {
+  flex-basis: 40%;
+}
+.appBar .logo h2 {
+  font-family: "Handlee", cursive;
+  color: #607d8b;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0.5rem;
+}
+.appBar .inputSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+}
+.appBar .inputSection .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.appBar .inputSection .input input {
+  width: 250px;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border: 2px solid #607d8b;
+  border-radius: 5px;
+  color: #547383;
+}
+.appBar .inputSection .input input:focus {
+  outline: none;
+}
+.appBar .inputSection .input input::-moz-placeholder {
+  color: #7a9cad;
+}
+.appBar .inputSection .input input:-ms-input-placeholder {
+  color: #7a9cad;
+}
+.appBar .inputSection .input input::placeholder {
+  color: #7a9cad;
+}
+.appBar .inputSection .input button {
+  margin-left: 5px;
+  font-size: 20px;
+  padding: 0.4rem 1rem;
+  width: 60px;
+  border: none;
+  background-color: #547383;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1) inset;
+}
+.appBar .inputSection .error {
+  width: 100%;
+}
+.appBar .inputSection .error small {
+  width: 100%;
+  margin-left: 16px;
   color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .appBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .appBar .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .appBar .inputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.4rem;
+  }
+  .appBar .inputSection .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .appBar .inputSection .input input {
+    width: 200px;
+  }
 }/*# sourceMappingURL=appBar.css.map */

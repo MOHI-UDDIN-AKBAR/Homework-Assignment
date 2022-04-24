@@ -1,0 +1,30 @@
+@mixin flex($justify, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wordWithMusicBrainz {
+  width: 90%;
+  @include flex(space-evenly, row);
+  margin: 0 auto;
+  .eachRecord {
+    border: 2px solid #1f2633;
+    margin: 30px;
+    padding: 1.5rem;
+    @include flex(flex-start, column);
+    .word {
+      font-size: 25px;
+    }
+    .record {
+      @include flex(flex-start, column);
+      margin-top: 16px;
+      span {
+        width: 100%;
+        font-size: 18px;
+        margin: 5px 0;
+      }
+    }
+  }
+}

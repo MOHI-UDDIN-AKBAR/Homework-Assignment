@@ -6,8 +6,9 @@ import Footer from "./components/Footer/Footer";
 import { useContextResult } from "./context/Context";
 const App = () => {
   const { isLoading } = useContextResult();
+
   useEffect(() => {
-    console.log(isLoading);
+    // console.log(isLoading);
   });
   return (
     <React.Fragment>

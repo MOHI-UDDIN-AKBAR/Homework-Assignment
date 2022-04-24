@@ -1,1 +1,35 @@
-/*# sourceMappingURL=wordWithMusicBrainz.css.map */
+.wordWithMusicBrainz {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.wordWithMusicBrainz .eachRecord {
+  border: 2px solid #1f2633;
+  margin: 30px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wordWithMusicBrainz .eachRecord .word {
+  font-size: 25px;
+}
+.wordWithMusicBrainz .eachRecord .record {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.wordWithMusicBrainz .eachRecord .record span {
+  width: 100%;
+  font-size: 18px;
+  margin: 5px 0;
+}/*# sourceMappingURL=wordWithMusicBrainz.css.map */

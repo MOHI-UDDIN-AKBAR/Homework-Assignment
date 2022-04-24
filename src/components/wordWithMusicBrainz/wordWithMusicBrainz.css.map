@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"wordWithMusicBrainz.css"}
+{"version":3,"sources":["wordWithMusicBrainz.scss","wordWithMusicBrainz.css"],"names":[],"mappings":"AAOA;EACE,UAAA;EAPA,aAAA;EACA,mBAO4B;EAN5B,6BAMc;EALd,mBAAA;EACA,eAAA;EAKA,cAAA;ACFF;ADGE;EACE,yBAAA;EACA,YAAA;EACA,eAAA;EAbF,aAAA;EACA,sBAa4B;EAZ5B,2BAYgB;EAXhB,mBAAA;EACA,eAAA;ACaF;ADFI;EACE,eAAA;ACIN;ADFI;EAlBF,aAAA;EACA,sBAkB8B;EAjB9B,2BAiBkB;EAhBlB,mBAAA;EACA,eAAA;EAgBI,gBAAA;ACQN;ADPM;EACE,WAAA;EACA,eAAA;EACA,aAAA;ACSR","file":"wordWithMusicBrainz.css"}

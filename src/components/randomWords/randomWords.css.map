@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"randomWords.css"}
+{"version":3,"sources":["randomWords.scss","randomWords.css"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;EACA,gBAAA;ACCF;ADAE;EACE,eAAA;EACA,YAAA;EACA,oCAAA;EACA,mBAAA;EACA,eAAA;ACEJ;;ADCA;EACE;IACE,WAAA;ECEF;AACF","file":"randomWords.css"}

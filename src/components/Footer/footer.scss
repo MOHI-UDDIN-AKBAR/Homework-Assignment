@@ -1,0 +1,15 @@
+@mixin flex($justify, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer {
+  @include flex(center, row);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 15vh;
+  h1 {
+    margin: 0;
+  }
+}

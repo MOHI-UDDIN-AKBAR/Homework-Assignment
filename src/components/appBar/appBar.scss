@@ -1,3 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@mixin flex($justify, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
 .appBar {
-  color: red;
+  width: 100%;
+  @include flex(flex-start, row);
+  background-color: white;
+  position: sticky;
+  top: 0;
+  .logo {
+    flex-basis: 40%;
+    h2 {
+      font-family: "Handlee", cursive;
+      color: #607d8b;
+      margin: 0;
+      margin-left: 20px;
+      padding: 0.5rem;
+    }
+  }
+  .inputSection {
+    @include flex(center, column);
+    padding: 0.4rem;
+
+    .input {
+      @include flex(center, row);
+      input {
+        width: 250px;
+        font-size: 18px;
+        padding: 0.5rem 1rem;
+        border: 2px solid #607d8b;
+        border-radius: 5px;
+        color: #547383;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: #7a9cad;
+        }
+      }
+      button {
+        margin-left: 5px;
+        font-size: 20px;
+        padding: 0.4rem 1rem;
+        width: 60px;
+        border: none;
+        background-color: #547383;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1) inset;
+      }
+    }
+    .error {
+      width: 100%;
+      small {
+        width: 100%;
+        margin-left: 16px;
+        color: red;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .appBar {
+    @include flex(center, column);
+    .logo {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .inputSection {
+      @include flex(center, column);
+      padding: 0.4rem;
+
+      .input {
+        @include flex(center, row);
+        input {
+          width: 200px;
+        }
+      }
+    }
+  }
 }
