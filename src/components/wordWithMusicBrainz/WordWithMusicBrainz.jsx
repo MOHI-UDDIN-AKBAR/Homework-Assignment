@@ -16,25 +16,28 @@ const WordWithMusicBrainz = () => {
   return (
     <>
       <div className="wordWithMusicBrainz">
-        {records?.map((record, i) => {
-          const { wordName, artistName, titleName } = record;
-          return (
-            <div className="eachRecord" key={i}>
-              <span className="word">{wordName ? wordName : ""}</span>
-              <div className="record">
-                <span className="title">
-                  Title : {titleName ? titleName : ""}
-                </span>
-                <span className="artist">
-                  Artist :{artistName ? artistName : ""}
-                </span>
-                {/* <span className="album">Album : osifosid lif lsn </span> */}
+        <h2>we got {records.length} results</h2>
+        <div className="records">
+          {records?.map((record, i) => {
+            const { wordName, artistName, titleName } = record;
+            return (
+              <div className="eachRecord" key={i}>
+                <span className="word">{wordName ? wordName : ""}</span>
+                <div className="record">
+                  <span className="title">
+                    Title : {titleName ? titleName : ""}
+                  </span>
+                  <span className="artist">
+                    Artist :{artistName ? artistName : ""}
+                  </span>
+                  {/* <span className="album">Album : osifosid lif lsn </span> */}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-      <div className="wordWithMusicBrainz">
+      {/* <div className="wordWithMusicBrainz">
         {array?.map((each, i) => (
           <div className="eachRecord" key={i}>
             <span className="word">MusicBrain</span>
@@ -45,7 +48,7 @@ const WordWithMusicBrainz = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

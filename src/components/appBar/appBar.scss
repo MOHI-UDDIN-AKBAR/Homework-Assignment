@@ -32,14 +32,18 @@
         width: 250px;
         font-size: 18px;
         padding: 0.5rem 1rem;
-        border: 2px solid #607d8b;
+        border: 2px solid #4e5c76;
+
         border-radius: 5px;
-        color: #547383;
+        color: #1f2633;
+        transition: width 0.5s;
+
         &:focus {
           outline: none;
+          width: 350px;
         }
         &::placeholder {
-          color: #7a9cad;
+          color: rgb(131, 127, 127);
         }
       }
       button {
@@ -48,10 +52,14 @@
         padding: 0.4rem 1rem;
         width: 60px;
         border: none;
-        background-color: #547383;
+        background-color: #4168b2;
         color: white;
         border-radius: 5px;
         box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1) inset;
+        cursor: pointer;
+        &:hover {
+          background-color: #487186;
+        }
       }
     }
     .error {
@@ -79,6 +87,11 @@
         @include flex(center, row);
         input {
           width: 200px;
+          transition: width 0.5s;
+          &:focus {
+            outline: none;
+            width: 220px;
+          }
         }
       }
     }
